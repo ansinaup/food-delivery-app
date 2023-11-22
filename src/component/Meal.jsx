@@ -88,11 +88,22 @@ const Meal = () => {
   return (
     <>
     <h1 className='text-orange-500 font-bold text-2xl text-center py-2 font-mono mt-6 mb-6'>Our Meals</h1>
+
+   <div className='flex justify-center md:justify-center py-4'>
+     <button className=' ml-20  bottom-4  border-2  rounded-md px-5 font-extrabold bg-orange-700 text-white '  >All</button>
+    <button className=' ml-20  bottom-4  border-2  rounded-md px-5 font-extrabold  bg-orange-700 text-white '>Pizza</button>
+    <button className=' ml-20  bottom-4  border-2  rounded-md px-5 font-extrabold  bg-orange-700 text-white'>Chicken</button>
+    <button className=' ml-20  bottom-4  border-2  rounded-md px-5 font-extrabold  bg-orange-700 text-white'>Salad</button> 
+
+  
+
+   </div>
+
     <div className='flex flex-wrap gap-4  px-14 justify-center items-center'>
      {
-      mealData.map(({title,image,price})=>{
+      mealData.map(({name,image,price})=>{
        return(
-        <MealCard img={image} title={title} price={price}/>
+        <MealCard img={image} title={name} price={price}/>
        )
       })
      }

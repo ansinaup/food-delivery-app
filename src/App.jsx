@@ -7,6 +7,8 @@ import Featured from './component/Featured'
 import Delivery from './component/Delivery'
 import TopPics from './component/TopPics'
 import Meal from './component/Meal'
+import NewsLetter from './component/NewsLetter'
+import Footer from './component/Footer'
 function App() {
   
 
@@ -17,6 +19,8 @@ function App() {
   <Delivery/>
   <TopPics/>
   <Meal/>
+  <NewsLetter/>
+  <Footer/>
   </>
  )
 }
